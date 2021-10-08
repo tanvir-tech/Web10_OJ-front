@@ -12,63 +12,54 @@
 
 <body class="bg-dark text-white">
     <div class="container">
-        <br><br>
-        <!-- qsn section  -->
-        <div class="container bg-warning p-5">
-            <h3>
-                Problem_ID : 01 #
-                <br>
-                Level : Easy
-                <br><br>
-                Find the mean value of the given numbers.
-            </h3>
+        <br>
+        <div class="container bg-info p-5">
 
-            <p class="bg-white text-dark p-3">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse minus culpa accusamus nemo, alias
-                incidunt
-                consequuntur corrupti suscipit cum veritatis laudantium labore. Inventore dolore eius pariatur
-                voluptates
-                doloremque expedita quo.
-                <br>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi reiciendis ea voluptatum culpa
-                asperiores
-                error illum recusandae dolore dignissimos minima facilis ipsum eum rem voluptates, accusamus velit
-                commodi
-                sit. Debitis?
-            </p>
-        </div>
-        <!-- qsn section  closed  -->
-        <div class="container bg-warning p-3">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h4>Sample Inputs</h4>
+
+            <form action="/setProblem" method="POST">
+                <h3>
+                    Title :
+                    <textarea class="form-control" id="title" name="title" rows="2"></textarea>
                     <br>
-                    <textarea class="form-control" id="" rows="3"></textarea>
-                </div>
-                <div class="col-lg-6">
-                    <h4>Outputs</h4>
+                    Category :
+                    <textarea class="form-control  col-lg-6" id="category" name="category" rows="1"></textarea>
                     <br>
-                    <textarea class="form-control" id="" rows="3"></textarea>
+                    <label for="level">Level :</label>
+                    <select class="form-control col-lg-4" id="level" name="level">
+                        <option>Easy</option>
+                        <option>Medium</option>
+                        <option>Hard</option>
+                    </select>
+                    <br>
+                </h3>
+
+                <h3>Description :</h3>
+                <textarea class="form-control" id="description" name="description" rows="12"></textarea>
+                <br>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>Sample Inputs</h4>
+                        <br>
+                        <textarea class="form-control" id="" rows="3"></textarea>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>Outputs</h4>
+                        <br>
+                        <textarea class="form-control" id="" rows="3"></textarea>
+                    </div>
                 </div>
-            </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 
         <br>
         <button class="btn btn-success" type="submit">Set problem</button>
+        </form>
+
+
+
 
 
 
